@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.principal {
+    text-align: center;
+    color: orange;
+    font-size: 6em;
+}
+
+.titulo {
+    text-align: center;
+    color: chartreuse;
+    font-size: 3em;
+}
+
+.basico {
+    color: aqua;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+
+.avançado {
+    color: red;
+}
+
+.paragrafo {
+    text-align: justify;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
