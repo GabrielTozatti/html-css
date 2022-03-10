@@ -1,29 +1,93 @@
 @charset "UTF-8";
 
+:root {
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Roboto Condensed', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
 header {
-    background-color: black;
-    text-align: center;
+    background-color: rgb(45, 46, 46);
     color: white;
-    padding: 120px;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 4em;
+    font-variant: small-caps;
+    padding-top: 50px;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.186);
 }
 
 header > p {
+    font-size: 1.2em;
+    padding-bottom: 50px;
     padding-top: 10px;
+    font-family: var(--font1);
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.186);
 }
 
 p > a {
     color: white;
     text-decoration: none;
+    font-family: var(--font1);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.186);
+}
+
+p > a:active{
+    color: rgb(174, 173, 173);
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
 }
 
 section > p {
+    font-family: var(--font1);
+}
+
+section.normal {
+    font-family: var(--font2);
+    font-weight: bold;
     font-size: 20px;
-    padding-top: 30px;
-    font-weight: bolder;
-    line-height: 2em;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.933) ;
+}
+
+section.imagem {
+    font-family: var(--font2);
+    font-size: 20px;
+    background-color: rgb(45, 46, 46);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.165);
+}
+
+footer {
+    background-color: rgb(45, 46, 46);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--font1);
 }
